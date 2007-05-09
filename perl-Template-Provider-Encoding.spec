@@ -6,7 +6,7 @@
 %define	pdir	Template
 %define	pnam	Provider-Encoding
 Summary:	Template::Provider::Encoding - Explicitly declare encodings of your templates
-#Summary(pl.UTF-8):	
+Summary(pl.UTF-8):	Template::Provider::Encoding - jawne określanie kodowań szablonów
 Name:		perl-Template-Provider-Encoding
 Version:	0.09
 Release:	1
@@ -33,8 +33,15 @@ plugin. Otherwise the template is handled as utf-8.
   [% USE encoding 'utf-8' %]
   Here comes utf-8 strings with [% variable %].
 
-# %description -l pl.UTF-8
-# TODO
+%description -l pl.UTF-8
+Template::Provider::Encoding to podklasa Template Provider dekodująca
+szablony przy użyciu ich deklaracji. Trzeba zadeklarować kodowanie
+szablonu w jego nagłówku (1. linii) przy użyciu (fałszywej) wtyczki
+kodowania TT. W przeciwnym wypadku szablon jest obsługiwany jako
+utf-8. Przykład:
+
+  [% USE encoding 'utf-8' %]
+  Tutaj tekst w utf-8 ze [% zmiennymi %].
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
