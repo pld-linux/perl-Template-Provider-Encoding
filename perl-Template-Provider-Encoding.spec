@@ -8,13 +8,13 @@
 Summary:	Template::Provider::Encoding - Explicitly declare encodings of your templates
 Summary(pl.UTF-8):	Template::Provider::Encoding - jawne określanie kodowań szablonów
 Name:		perl-Template-Provider-Encoding
-Version:	0.09
+Version:	0.10
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Template/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	a2af735582d141d49810f1ede78d4da3
+# Source0-md5:	fddbc7b4c2033d931932880149cab323
 URL:		http://search.cpan.org/dist/Template-Provider-Encoding/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
