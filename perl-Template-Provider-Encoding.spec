@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	Template
 %define	pnam	Provider-Encoding
 Summary:	Template::Provider::Encoding - Explicitly declare encodings of your templates
